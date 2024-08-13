@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link href="css/poppins.css" rel="stylesheet" type="text/css">
+   <link href="inicio/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+   <!--<link rel="stylesheet" href="css/all.min.css" type="text/css">-->
+   <!--<link rel="stylesheet" href="css/fontawesome.min.css" type="text/css">-->
+   <title>Inicio de sesión</title>
+
+   <!-- Favicon -->
+   <link rel="icon" href="img/utselva_icono_pagina.png" type="image/x-icon">
+</head>
+
+<body>
+   <img class="wave" src="img/fondo gris.jpg">
+   <div class="container">
+      <div class="img">
+         <img src="img/logo_oficial.png">
+      </div>
+      <div class="login-content">
+
+         <form method="post" action="inicio/modulos/controladorLogin.php">
+            <img src="img/traje.png">
+            <h2 class="title">BIENVENIDO</h2>
+            <div class="input-div one">
+               <div class="i">
+                  <i class="fas fa-user"></i>
+               </div>
+               <div class="div">
+                  <h5>Correo</h5>
+                  <!--Aqui en el input uso el AUTOCOMPLETE="OFF" para evitar
+                  que me de sugerencias de respuestas, cosa que no deberia de ser-->
+                  <input id="correo" type="email" class="input" name="correo" required autocomplete="off">
+               </div>
+            </div>
+            <div class="input-div pass">
+               <div class="i">
+                  <i class="fas fa-lock"></i>
+               </div>
+               <div class="div">
+                  <h5>Contraseña</h5>
+                  <!--Aqui en el input uso el AUTOCOMPLETE="OFF" para evitar
+                  que me de sugerencias de respuestas, cosa que no deberia de ser-->
+                  <input type="password" id="contrasena" class="input" name="contrasena" required autocomplete="off">
+               </div>
+            </div>
+            <div class="view">
+               <div class="fas fa-eye verPassword" onclick="vista()" id="verPassword"></div>
+            </div>
+
+            
+            <input class="btn" type="submit" value="INICIAR SESIÓN">
+            <a class="btn menu" href="../index.html">MENÚ PRINCIPAL</a>
+         </form>
+      </div>
+   </div>
+   <script src="js/fontawesome.js"></script>
+   <script src="js/main.js"></script>
+   <script src="js/main2.js"></script>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.js"></script>
+   <script src="js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
